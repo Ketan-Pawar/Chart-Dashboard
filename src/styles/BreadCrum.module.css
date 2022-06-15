@@ -1,0 +1,29 @@
+.breadcrum {
+    list-style: none;
+    padding: 0.8em;
+    font-weight: 500;
+    position: relative;
+    right: 435px;
+    color: var(--theme-color);
+    text-transform: capitalize;
+}
+
+.breadcrum > li {
+    display: inline;
+    padding: 0.1em;
+    cursor: pointer;
+}
+
+.breadcrum > li::after {
+    content: '>';
+    padding: 0 0.3em;
+    color: black;
+}
+
+.breadcrum > li:last-child::after {
+    content: '';
+}
+
+.breadcrum > li.active {
+    color: red
+}

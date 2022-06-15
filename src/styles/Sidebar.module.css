@@ -1,0 +1,63 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    gap: 0;
+    background-color: rgb(228, 223, 223);
+    color: var(--theme-color);
+}
+
+/* tabs */
+
+.sidebar > .tabsbar {
+    display: flex;
+    height: fit-content;
+    padding: 0 0.8em;
+    border-bottom: 0.1em solid var(--theme-color);
+}
+
+.sidebar > .tabsbar > .tab {
+    cursor: pointer;
+    padding: 1em 0.8em;
+    font-weight: 500;
+    border-bottom: 0.1em solid transparent;
+    transition: all 0.9s;
+}
+
+.sidebar > .tabsbar > .tab.active {
+    color: var(--active-color);
+    border-bottom-color: var(--active-color);
+}
+
+/* Tabs */
+
+.sidebar > .tabs {
+    height: 100%;
+    /* inner style */
+    display: flex;
+    flex-direction: column;
+    padding: 0.8em;
+}
+
+/* Map Link */
+
+.sidebar > .tabs > .map {
+    width: 100%;
+    margin-top: 350px;  /* Changed this */
+    margin-bottom: 0;
+    /* inner style */
+    display: flex;
+    height: fit-content;
+    padding: 0.5em 0.8em;
+    border-radius: 0.1em;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    border: 0.1em solid var(--theme-color);
+}
+
+.sidebar > .tabs > .map::after {
+    content: ">";
+    margin-left: auto;
+}

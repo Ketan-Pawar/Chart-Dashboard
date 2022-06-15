@@ -1,0 +1,24 @@
+.button_group {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    width: fit-content;
+    border-radius: 0.1em;
+    border: 0.1em solid var(--theme-color);
+    transition: all 0.8s;
+}
+
+.button_group > .btn {
+    font-weight: 500;
+    padding: 1em 1.5em;
+    cursor: pointer;
+    color: var(--theme-color);
+    fill: var(--theme-color);
+    text-transform: capitalize;
+}
+
+.button_group > .btn.active {
+    font-weight: 700;
+    color: black;
+    background-color: transparent;
+}

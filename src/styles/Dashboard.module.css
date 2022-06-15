@@ -1,0 +1,27 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: max-content auto;
+    gap: 0;
+    background-color: rgb(215, 232, 247);
+}
+
+.dashboard > .dashboard_content {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 100%;
+    padding: 0.8em;
+}
+
+.dashboard > .dashboard_content > .chart_group {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    gap: 0.8em;
+    padding: 0.8em;
+}
+
+.dashboard > .dashboard_content > .chart_group > .filter {
+    display: flex;
+    gap: 1em;
+}
